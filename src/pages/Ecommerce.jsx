@@ -2,8 +2,9 @@ import React from "react";
 import { BsCurrencyDollar } from "react-icons/bs";
 import { Header } from "../components";
 import { useStateContext } from "../contexts/ContextProvider";
-import { FaProductHunt } from "react-icons/fa";
-import { BiCategoryAlt } from "react-icons/bi";
+import { FcProcess } from "react-icons/fc";
+import { MdPendingActions } from "react-icons/md";
+import { AiOutlineFileDone } from "react-icons/ai";
 
 const Ecommerce = () => {
   const { currentColor } = useStateContext();
@@ -19,7 +20,7 @@ const Ecommerce = () => {
         <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-36 rounded-xl w-full  p-8 pt-9 m-3 bg-hero-pattern bg-no-repeat bg-cover bg-center">
           <div className="flex justify-between items-center">
             <div>
-              <p className="font-bold text-gray-400">Pindding Tasks</p>
+              <p className="font-bold text-gray-400">Pending Tasks</p>
               <p className="text-2xl">4</p>
             </div>
             <button
@@ -27,7 +28,7 @@ const Ecommerce = () => {
               style={{ backgroundColor: currentColor }}
               className="text-2xl opacity-0.9 text-white hover:drop-shadow-xl rounded-full  p-4"
             >
-              <BiCategoryAlt />
+              <MdPendingActions />
             </button>
           </div>
         </div>
@@ -43,7 +44,7 @@ const Ecommerce = () => {
               style={{ backgroundColor: currentColor }}
               className="text-2xl opacity-0.9 text-white hover:drop-shadow-xl rounded-full  p-4"
             >
-              <BiCategoryAlt />
+              <FcProcess />
             </button>
           </div>
         </div>
@@ -59,7 +60,7 @@ const Ecommerce = () => {
               style={{ backgroundColor: currentColor }}
               className="text-2xl opacity-0.9 text-white hover:drop-shadow-xl rounded-full  p-4"
             >
-              <FaProductHunt />
+              <AiOutlineFileDone />
             </button>
           </div>
         </div>
